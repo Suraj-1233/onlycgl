@@ -1,5 +1,6 @@
 package com.jwt.example.JwtExample.controllers;
 
+import java.security.Principal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,15 @@ public class HomeController {
 // return this.userService.getUsers();
  return this.userService.getUsers();
  }
+
+
+ @GetMapping("/current-user")
+ public String currentUser( Principal principal)
+ {
+
+    return principal.getName();
+ }
+
 
 
 }
