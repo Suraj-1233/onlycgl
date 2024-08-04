@@ -7,6 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication  
 
 
+
+
+
 public class JwtExampleApplication {
 
 	public static void main(String[] args) {
